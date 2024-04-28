@@ -382,7 +382,8 @@ class purchase_operator:
             state = json.loads(state)
             budget = state['observation']['players'][self.player_id]['budget']
             if cnt >= self.max_try_time:
-                raise RuntimeError("can't do the checkout!")
+                break
+                # raise RuntimeError("can't do the checkout!")
             cnt += 1
         
         # goback and pick up if using carts

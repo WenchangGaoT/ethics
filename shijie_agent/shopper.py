@@ -35,8 +35,10 @@ if __name__ == "__main__":
     for i in range(len(raw_shopping_list)):
         for j in range(list_quant[i]):
             shopping_list.append(raw_shopping_list[i])
+            
+    shopping_list = ["cucumber","milk","garlic","cheese wheel","prepared foods"]
+
     random.shuffle(shopping_list)
-    # shopping_list = ["cucumber","cucumber","cucumber","cucumber","cucumber","cucumber","cucumber"]
     print("today's shopping task: {}".format(shopping_list))
 
     # determine shopping with carts or baskets
